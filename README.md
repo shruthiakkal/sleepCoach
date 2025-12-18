@@ -1,5 +1,30 @@
 # sleepCoach
 
+Sleep Coach AI (V2) - Weekly Insights
+
+The V2 Sleep Coach upgrades from daily tips to long-term trend analysis. By aggregating a full week of sleep metrics and lifestyle habits, it identifies patterns that a single-day analysis might miss.
+
+Key Upgrades in V2
+- Processes a collection of OneDaySleep objects to understand user behavior over time.
+- Instead of generic tips, the model now focuses on "One Big Change" based on a 7-day lookback.
+
+API Endpoint: /coach/weekly/analysis
+
+Sample Request Payload:
+{
+  "user_name": "Jordan",
+  "last_7_days": [
+    {"date": "2023-10-01", "hrv": 55, "score": 82, "tags": ["late_workout", "caffeine"]},
+    {"date": "2023-10-02", "hrv": 48, "score": 70, "tags": ["stress"]},
+    {"date": "2023-10-03", "hrv": 60, "score": 88, "tags": []},
+    {"date": "2023-10-04", "hrv": 52, "score": 75, "tags": ["late_workout"]},
+    {"date": "2023-10-05", "hrv": 58, "score": 80, "tags": []},
+    {"date": "2023-10-06", "hrv": 45, "score": 65, "tags": ["alcohol"]},
+    {"date": "2023-10-07", "hrv": 62, "score": 90, "tags": ["meditation"]}
+  ]
+}
+
+
 Sleep Coach AI (V1)
 
 A simple FastAPI service that acts as a personalized sleep coach. This project demonstrates how to integrate the Groq SDK with Llama 3.3 70B to provide health insights based on user data.
