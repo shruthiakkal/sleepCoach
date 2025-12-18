@@ -1,6 +1,6 @@
 # sleepCoach
 
-Sleep Coach AI (V3) - Occupational Health Edition
+## Sleep Coach AI (V3) - Occupational Health Edition
 
 What's New in V3?
 
@@ -16,7 +16,7 @@ Key Enhancements:
 
 
 
-Sleep Coach AI (V2) - Weekly Insights
+## Sleep Coach AI (V2) - Weekly Insights
 
 The V2 Sleep Coach upgrades from daily tips to long-term trend analysis. By aggregating a full week of sleep metrics and lifestyle habits, it identifies patterns that a single-day analysis might miss.
 
@@ -41,7 +41,7 @@ Sample Request Payload:
 }
 
 
-Sleep Coach AI (V1)
+## Sleep Coach AI (V1)
 
 A simple FastAPI service that acts as a personalized sleep coach. This project demonstrates how to integrate the Groq SDK with Llama 3.3 70B to provide health insights based on user data.
 
