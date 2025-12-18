@@ -1,5 +1,21 @@
 # sleepCoach
 
+Sleep Coach AI (V3) - Occupational Health Edition
+
+What's New in V3?
+
+V3 introduces Contextual Grounding. Instead of the user providing their sleep data manually, the system fetches detailed profiles from a comprehensive sleep health dataset based on a user_id.
+
+Key Enhancements:
+
+  - Data Integration: Utilizes the Sleep Health and Lifestyle Dataset.
+
+  - Role-Based Prompting: Assigns a specific persona to the LLM ("Expert Sleep Coach in Occupational Health").
+
+  - Conditional Logic: The prompt generator now includes "If/Then" logic, guiding the LLM to focus on specific stressors (e.g., burnout for Doctors, sedentary issues for Software Engineers).
+
+
+
 Sleep Coach AI (V2) - Weekly Insights
 
 The V2 Sleep Coach upgrades from daily tips to long-term trend analysis. By aggregating a full week of sleep metrics and lifestyle habits, it identifies patterns that a single-day analysis might miss.

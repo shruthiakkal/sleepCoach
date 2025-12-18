@@ -60,9 +60,9 @@ async def analyze_weekly_sleep(data: WeeklyReport):
 
     return {"weekly_coaching": completion.choices[0].message.content}
 
-if __name__=="__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+# if __name__=="__main__":
+#     import uvicorn
+#     uvicorn.run(app, host="0.0.0.0", port=8000)
 
 
 

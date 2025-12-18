@@ -46,7 +46,7 @@ async def analyze_sleep(data: SleepData):
     return {"advice": completion.choices[0].message.content}
 
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run(app, host="0.0.0.0", port=8000)
 
